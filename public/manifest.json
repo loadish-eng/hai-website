@@ -1,0 +1,16 @@
+{
+  "name": "H.A.I, LLC — Local Intelligence Infrastructure",
+  "short_name": "H.A.I",
+  "description": "Enterprise AI hardware that keeps your models and data entirely within your infrastructure.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
