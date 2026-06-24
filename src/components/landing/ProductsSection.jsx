@@ -21,19 +21,19 @@ const PRODUCTS = [
       {
         title: "Unifiefd AI Systems",
         detail:
-          "Hardware capable of running premier AI models comfortably, on-premise.",
+          "Hardware running premier AI models comfortably, on-premise with a chat interface.",
       },
       {
         title: "Total Data Security",
         detail: "Data never leaves your network or building.",
       },
       {
-        title: "Models Tailored For You",
-        detail: "Available for maximum security and zero external exposure.",
+        title: "Open Source Models Tailored For You",
+        detail: "Utilizing latest premier open source models for your use cases.",
       },
       {
         title: "Scalable Clusters",
-        detail: "Tiered expansions for higher concurrency or increase use.",
+        detail: "Tiered hardware expansions for higher concurrency or increase use.",
       },
     ],
   },
@@ -42,7 +42,7 @@ const PRODUCTS = [
     name: "Custom AI Models & Fine-Tuning",
     tagline: "Your data, your intelligence",
     description:
-      "Train or fine-tune open source models on your proprietary datasets so your AI truly knows your business.",
+      "Train or fine-tune models on your proprietary datasets so your AI truly knows your business.",
     icon: Brain,
     isCore: true,
     features: [
@@ -109,7 +109,7 @@ const ADDITIONAL_REVENUE = [
   {
     title: "Ongoing Optimization",
     description:
-      "Continuous model refresh, performance tuning, and infrastructure optimization services.",
+      "Continuous model refresh, performance tuning, and infrastructure optimization.",
   },
 ];
 

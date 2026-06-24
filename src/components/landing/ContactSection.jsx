@@ -146,17 +146,17 @@ export default function ContactSection() {
               </div>
               <div className="text-muted-foreground space-y-1">
                 <p>
-                  <span className="text-primary">$</span> sovereign-ai --init
+                  <span className="text-primary">$</span> hai-infra --init --models
                   deployment
                 </p>
                 <p>
                   <span className="text-muted-foreground/60">
-                    → Scanning infrastructure requirements...
+                    → Scanning user and infrastructure requirements...
                   </span>
                 </p>
                 <p>
                   <span className="text-muted-foreground/60">
-                    → Security protocols: ACTIVE
+                    → Premier models loaded: COMPLETE
                   </span>
                 </p>
                 <p>
@@ -166,7 +166,7 @@ export default function ContactSection() {
                 </p>
                 <p>
                   <span className="text-primary">
-                    → Ready for project initialization_
+                    → HAI Infrastructure loaded. Ready for success.
                   </span>
                 </p>
               </div>

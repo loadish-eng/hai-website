@@ -34,7 +34,7 @@ const SECTION_CONTENT = {
     },
   ],
   stats: [
-    { value: "TAMPA/ST PETE AREA", label: "DEPLOYMENTS", icon: Wrench },
+    { label: "CURRENTING DEPLOYING IN", value: "TAMPA AREA",  icon: Wrench },
     { value: "99%", label: "UPTIME", icon: Clock },
     { value: "FAIR PRICING", label: "TIERED SERVICE", icon: Users },
     { value: "0", label: "REASONS TO PAY AI CLOUD PROVIDERS", icon: Award },
