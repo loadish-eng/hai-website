@@ -3,15 +3,15 @@ import { ArrowDown, Shield, Lock, Server } from "lucide-react";
 
 const HERO_CONTENT = {
   topLabel: "SYSTEM STATUS: ACTIVE",
-  headlineLeft: "LOCAL ARTIFICAL INTELLIGENCE",
-  headlineRight: "YOU BUILD AND OWN.",
+  headlineLeft: "LOCAL INTELLIGENCE.",
+  headlineRight: "ABSOLUTE SOVEREIGNTY.",
   description:
     "Deploy AI models on-premise with enterprise-grade hardware that keeps your data, your models, and your competitive advantage entirely within your infrastructure. Zero cloud dependency. Total control.",
   ctaLabel: "INITIALIZE DEPLOYMENT",
-  ctaSecondaryLabel: "VIEW PRODUCTS",
+  ctaSecondaryLabel: "VIEW HARDWARE",
   stats: [
     { value: "100%", label: "DATA LOCALITY", icon: Shield },
-    { value: "0%", label: "CLOUD EXPOSURE", icon: Lock },
+    { value: "0", label: "CLOUD EXPOSURE", icon: Lock },
     { value: "∞", label: "SCALABILITY", icon: Server },
   ],
 };

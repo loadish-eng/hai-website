@@ -32,19 +32,19 @@ const SECTION_CONTENT = {
       icon: HardDrive,
       title: "Data Residency",
       description:
-        "Meet any compliance requirement with data that is physically present in your jurisdiction.",
-      metric: "FULL COMPLIANCE, FULL CONTROL",
+        "Meet any compliance requirement — GDPR, HIPAA, SOC 2 — with data that is physically present in your jurisdiction.",
+      metric: "FULL COMPLIANCE",
     },
     {
       icon: Wifi,
       title: "Network Independence",
       description:
-        "Operate AI workloads during outages or bandwidth constraints. Your intelligence is always online and free to use.",
-      metric: "ZERO DOWNTIME, ZERO TOKEN COST",
+        "Operate AI workloads during outages, disconnections, or bandwidth constraints. Your intelligence is always online.",
+      metric: "ZERO DOWNTIME",
     },
     {
       icon: Eye,
-      title: "Data Monitor",
+      title: "Audit Transparency",
       description:
         "Full hardware and software audit trails. Know exactly what processes access your data, when, and why.",
       metric: "COMPLETE VISIBILITY",

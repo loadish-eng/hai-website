@@ -2,17 +2,11 @@ import React, { useState } from "react";
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
 
 // ⚙️ CUSTOMIZE: Change this to the email address where you want to receive submissions
-const NOTIFICATION_EMAIL = "lifeofloadish@gmail.com";
+const NOTIFICATION_EMAIL = "ops@hai-llc.com";
 
-// ⚙️ CUSTOMIZE: Point this at whatever form backend you want to use.
-// Set VITE_CONTACT_FORM_ENDPOINT in your .env file (see .env.example) to any
-// endpoint that accepts a JSON POST body, e.g.:
-//   - A Netlify Function / AWS Lambda / Cloudflare Worker you write yourself
-//   - A form-as-a-service provider (Formspree, Getform, Web3Forms, etc.)
-// If no endpoint is configured, the form falls back to opening the visitor's
-// email client with a pre-filled message via a mailto: link, so it still
-// works out of the box with zero backend required.
-const CONTACT_FORM_ENDPOINT = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || "";
+// Netlify Function endpoint — deployed automatically alongside the site.
+// No environment variable needed; this path always works on Netlify.
+const CONTACT_FORM_ENDPOINT = "/.netlify/functions/contact";
 
 const SECTION_CONTENT = {
   label: "SECURE UPLINK",
@@ -30,7 +24,8 @@ const SECTION_CONTENT = {
       options: [
         "Select deployment type",
         "LLM Inference Infrastructure",
-        "Training LLM Models",
+        "Training Cluster",
+        "Edge AI Deployment",
         "Secure Data Pipeline",
         "Full-Stack AI Platform",
         "Other",
@@ -63,54 +58,31 @@ export default function ContactSection() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const buildMessageBody = () =>
-    [
-      "New project inquiry received via the H.A.I contact form.",
-      "",
-      `Name: ${formData.name}`,
-      `Email: ${formData.email}`,
-      `Organization: ${formData.company}`,
-      `Use Case: ${formData.useCase}`,
-      "",
-      "Project Brief:",
-      formData.message || "(no message provided)",
-    ].join("\n");
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
     setSubmitError("");
 
     try {
-      if (CONTACT_FORM_ENDPOINT) {
-        // Send to whatever backend the site owner has configured.
-        const response = await fetch(CONTACT_FORM_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            to: NOTIFICATION_EMAIL,
-            subject: `[H.A.I] New Deployment Inquiry — ${formData.company || formData.name}`,
-            ...formData,
-          }),
-        });
+      const response = await fetch(CONTACT_FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: NOTIFICATION_EMAIL,
+          subject: `[H.A.I] New Deployment Inquiry — ${formData.company || formData.name}`,
+          ...formData,
+        }),
+      });
 
-        if (!response.ok) {
-          throw new Error(`Form endpoint responded with status ${response.status}`);
-        }
-      } else {
-        // No backend configured — fall back to opening the user's email client.
-        const subject = encodeURIComponent(
-          `[H.A.I] New Deployment Inquiry — ${formData.company || formData.name}`
-        );
-        const body = encodeURIComponent(buildMessageBody());
-        window.location.href = `mailto:${NOTIFICATION_EMAIL}?subject=${subject}&body=${body}`;
+      if (!response.ok) {
+        throw new Error(`Form endpoint responded with status ${response.status}`);
       }
 
       setSending(false);
       setSubmitted(true);
     } catch (err) {
       setSending(false);
-      setSubmitError("Something went wrong sending your message. Please try again or email us directly.");
+      setSubmitError("Something went wrong sending your message. Please try again or email us directly at " + NOTIFICATION_EMAIL);
       console.error("Contact form submission failed:", err);
     }
   };
@@ -146,17 +118,17 @@ export default function ContactSection() {
               </div>
               <div className="text-muted-foreground space-y-1">
                 <p>
-                  <span className="text-primary">$</span> hai-infra --init --models
+                  <span className="text-primary">$</span> sovereign-ai --init
                   deployment
                 </p>
                 <p>
                   <span className="text-muted-foreground/60">
-                    → Scanning user and infrastructure requirements...
+                    → Scanning infrastructure requirements...
                   </span>
                 </p>
                 <p>
                   <span className="text-muted-foreground/60">
-                    → Premier models loaded: COMPLETE
+                    → Security protocols: ACTIVE
                   </span>
                 </p>
                 <p>
@@ -166,7 +138,7 @@ export default function ContactSection() {
                 </p>
                 <p>
                   <span className="text-primary">
-                    → HAI Infrastructure loaded. Ready for success.
+                    → Ready for project initialization_
                   </span>
                 </p>
               </div>

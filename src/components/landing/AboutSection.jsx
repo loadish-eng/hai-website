@@ -7,37 +7,37 @@ const SECTION_CONTENT = {
   description:
     "We don't advise from the sidelines. We design, build, deploy, and maintain the physical AI infrastructure that keeps your intelligence proprietary and your operations sovereign.",
   pullQuote: {
-    text: "Your data is your moat in AI. We make that moat",
-    highlight: "YOURS",
+    text: "Your models are your moat. We make that moat",
+    highlight: "UNHACKABLE",
     suffix: ".",
   },
   values: [
     {
       title: "Hardware-First Philosophy",
       description:
-        "Every recommendation starts with the silicon. We architect from the based on your needs, ensuring maximum performance per dollar for your workloads.",
+        "Every recommendation starts with the silicon. We architect from the chip up, ensuring maximum performance per watt and per dollar for your specific workloads.",
     },
     {
-      title: "Data-Trust Architecture",
+      title: "Zero-Trust Architecture",
       description:
-        "We build infrastructure that is secure by design, not by hope. No data leaves unless its intended to, ",
+        "Our deployments assume breach. Every component is isolated, encrypted, and auditable. We build infrastructure that is secure by design, not by hope.",
     },
     {
       title: "Full-Stack Ownership",
       description:
-        "From procurement to rack installation to model optimization to ongoing maintenance — we own the entire lifecycle so you can focus on building and working.",
+        "From procurement to rack installation to model optimization to ongoing maintenance — we own the entire lifecycle so you can focus on building intelligence.",
     },
     {
       title: "Open Standards",
       description:
-        "No proprietary black boxes. We build on open hardware specifications and open-source software stacks that you can audit, modify, and own.",
+        "No vendor lock-in. No proprietary black boxes. We build on open hardware specifications and open-source software stacks that you can audit, modify, and own.",
     },
   ],
   stats: [
-    { label: "CURRENTING DEPLOYING IN", value: "TAMPA AREA",  icon: Wrench },
-    { value: "99%", label: "UPTIME", icon: Clock },
-    { value: "FAIR PRICING", label: "TIERED SERVICE", icon: Users },
-    { value: "0", label: "REASONS TO PAY AI CLOUD PROVIDERS", icon: Award },
+    { value: "200+", label: "DEPLOYMENTS", icon: Wrench },
+    { value: "99.97%", label: "UPTIME SLA", icon: Clock },
+    { value: "50+", label: "ENGINEERS", icon: Users },
+    { value: "0", label: "DATA BREACHES", icon: Award },
   ],
 };
 

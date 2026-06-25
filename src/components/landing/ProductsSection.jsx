@@ -3,9 +3,9 @@ import { Server, Brain, Bot, Plus, Check } from "lucide-react";
 
 const SECTION_CONTENT = {
   label: "HARDWARE LEDGER",
-  headline: "Local AI Infrastructure, Deployed",
+  headline: "Sovereign AI Infrastructure, Deployed",
   description:
-    "Three core product tiers — from physical hardware to leading models to autonomous agents — plus revenue streams enabled through partnership. Everything runs locally, everything stays under your roof.",
+    "Three core product tiers — from physical hardware to custom models to autonomous agents — plus revenue streams we enable for partners. Everything runs locally, everything stays yours.",
 };
 
 const PRODUCTS = [
@@ -14,26 +14,30 @@ const PRODUCTS = [
     name: "Secure Onsite Hardware + Models",
     tagline: "Our core product",
     description:
-      "We source the hardware, configure and deploy it for local AI servers built for your environment. From delivery to production, all hardware and data is localized and yours.",
+      "We source, configure, and deploy high-performance local AI servers built for your environment. From delivery to production models in days, not months.",
     icon: Server,
     isCore: true,
     features: [
       {
-        title: "Unifiefd AI Systems",
+        title: "Unified-Memory Systems",
         detail:
-          "Hardware running premier AI models comfortably, on-premise with a chat interface.",
+          "Hardware capable of running 70B+ parameter models comfortably, on-premise.",
       },
       {
-        title: "Total Data Security",
+        title: "Total Data Containment",
         detail: "Data never leaves your network or building.",
       },
       {
-        title: "Open Source Models Tailored For You",
-        detail: "Utilizing latest premier open source models for your use cases.",
+        title: "Air-Gapped Options",
+        detail: "Available for maximum security and zero external exposure.",
+      },
+      {
+        title: "Rapid Setup",
+        detail: "From delivery to production models in days, not months.",
       },
       {
         title: "Scalable Clusters",
-        detail: "Tiered hardware expansions for higher concurrency or increase use.",
+        detail: "Expand for higher concurrency or complex workloads.",
       },
     ],
   },
@@ -42,33 +46,33 @@ const PRODUCTS = [
     name: "Custom AI Models & Fine-Tuning",
     tagline: "Your data, your intelligence",
     description:
-      "Train or fine-tune models on your proprietary datasets so your AI truly knows your business.",
+      "Train or fine-tune open-weight models on your proprietary datasets so your AI truly knows your business — not a generic version of everyone else's.",
     icon: Brain,
     isCore: true,
     features: [
       {
-        title: "Model Fine-Tuning",
+        title: "Proprietary Fine-Tuning",
         detail:
-          "Train on your documents, records, financials, and internal procedures.",
+          "Train on your documents, emails, financials, and internal procedures.",
       },
       {
-        title: "Automated Learning",
-        detail: "Questions reinforces and creates model learning patterns.",
+        title: "Retrieval-Augmented Generation (RAG)",
+        detail: "Ground responses in your actual business knowledge.",
       },
       {
-        title: "Tool-Calling Models",
-        detail: "Integrate with external systems to make decisions.",
+        title: "Tool-Calling Agents",
+        detail: "Integrate with internal systems securely and reliably.",
       },
     ],
   },
   {
     number: "03",
     name: "AI Agents & Automation",
-    tagline: "AI doing the dirty work",
+    tagline: "Autonomous, on-premise",
     description:
-      "Deploy autonomous agents that operate on your assigned tasks analyzing, monitoring, and orchestrating work without exposing data.",
+      "Deploy autonomous agents that operate on your local infrastructure — analyzing, monitoring, and orchestrating work without exposing data externally.",
     icon: Bot,
-    isCore: false,
+    isCore: true,
     features: [
       {
         title: "Document Analysis",
@@ -109,7 +113,7 @@ const ADDITIONAL_REVENUE = [
   {
     title: "Ongoing Optimization",
     description:
-      "Continuous model refresh, performance tuning, and infrastructure optimization.",
+      "Continuous model refresh, performance tuning, and infrastructure optimization services.",
   },
 ];
 
